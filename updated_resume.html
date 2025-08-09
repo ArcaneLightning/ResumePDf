@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehul Biala Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.4;
+            color: #000;
+            background: white;
+            padding: 40px;
+            max-width: 8.5in;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            font-size: 12px;
+            line-height: 1.3;
+        }
+        
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #000;
+        }
+        
+        .project {
+            margin-bottom: 12px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .project-tech {
+            font-size: 11px;
+            font-style: italic;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        
+        .project-description {
+            font-size: 11px;
+            text-align: justify;
+            line-height: 1.3;
+        }
+        
+        .experience-item {
+            margin-bottom: 10px;
+        }
+        
+        .experience-header {
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .experience-details {
+            font-size: 11px;
+            line-height: 1.3;
+            margin-top: 2px;
+        }
+        
+        .award-item {
+            margin-bottom: 6px;
+            font-size: 11px;
+        }
+        
+        .award-title {
+            font-weight: bold;
+        }
+        
+        .url-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .print-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .print-button:hover {
+            background: #0056b3;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            .print-button {
+                display: none;
+            }
+        }
+        
+        ul {
+            margin-left: 15px;
+            margin-bottom: 8px;
+        }
+        
+        li {
+            font-size: 11px;
+            line-height: 1.3;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">Download PDF</button>
+    
+    <div class="header">
+        <div class="name">Mehul Biala</div>
+        <div class="contact-info">
+            mehulbiala@gmail.com<br>
+            408-499-5543
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Summary</div>
+        <div class="project-description">
+            I am a high schooler who's passionate in all things STEM, ranging from computer science, math to artificial intelligence. The following sections include some of my projects I built, experiences I've had, and awards I've won over the past few years.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projects</div>
+        
+        <div class="project">
+            <div class="project-title">OncoML | <a href="#" class="url-link">GitHub</a></div>
+            <div class="project-tech">Python, TensorFlow, Pandas, Numpy, ScanPy - Deep Learning + Computational Biology</div>
+            <div class="project-description">
+                Developed a machine learning framework with ScanPy and TensorFlow to predict anti-cancer drug efficacy, enabling personalized treatments. It integrates genomic analysis to assess responses to monotherapy and combinatorial therapies, using transcriptomic profiles to estimate cell death at various drug dosages. The framework includes a pre-trained model based on the GDSC database and supports training on additional datasets like CTRP.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">EasyMelanoma | <a href="#" class="url-link">GitHub</a></div>
+            <div class="project-tech">Python, Flutter, FireBase, PyTorch, Numpy, Pandas - Deep Learning + App Development</div>
+            <div class="project-description">
+                Developed a skin cancer detection app for the Synopsys Science Fair using PyTorch to train a VGG16 model on melanoma datasets. The app, built with Flutter, classifies images as benign or malignant and uses Firebase to track diagnoses and mole changes. 3rd in Science Fair.<br>
+                Demo: <a href="https://youtu.be/sM2gZZ3f2HM" class="url-link">https://youtu.be/sM2gZZ3f2HM</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">AI Speech Practice & Grader (In Progress)</div>
+            <div class="project-tech">Next.js, React, TypeScript, Tailwind CSS, Azure Cognitive Services, Gemini AI, Supabase - Full-Stack + AI</div>
+            <div class="project-description">
+                Web app that lets users practice speeches with live recording or file upload, then receives AI content feedback and Azure pronunciation analysis, with history, downloads, and progress tracking. Built robust audio pipeline with upload to Supabase Storage, server-side ffmpeg MP3→WAV conversion for Azure SDK, and smooth frame-driven recording timer with haptic feedback. Implemented practice modes with target durations, AI content scoring via Gemini, and word-level pronunciation accuracy through Azure. Features polished UI with gradients, glass effects, and animated progress tracking.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Frontlines Foundation — Nonprofit Digital Safety Website (In Progress)</div>
+            <div class="project-tech">Next.js 15, React 18, TypeScript, Tailwind CSS, Framer Motion - Frontend Development</div>
+            <div class="project-description">
+                Professional, responsive marketing site for a nonprofit focused on digital safety education and community outreach. Built scalable, component-driven UI with strong SEO foundations using Next.js Metadata API with Open Graph and Twitter cards. Implemented App Router structure, centralized theming, static pre-rendering for fast page loads, and accessible layout components with motion effects. Integrated react-hook-form for reliable, type-safe form handling across Home, About, Services, Team, Get Involved, and Contact pages.<br>
+                URL: <a href="https://frontlines-foundation.vercel.app/" class="url-link">https://frontlines-foundation.vercel.app/</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Full-Stack Engineer — AI USAJMO Proof Grader (Stellar)</div>
+            <div class="project-tech">SvelteKit, TypeScript, Python, Quart, OpenAI GPT-4o, MongoDB - Full-Stack + AI</div>
+            <div class="project-description">
+                Built an AI-powered proof grading experience that lets students write LaTeX proofs, submit against official solutions, and receive a 0–7 USAJMO score with detailed feedback. Frontend implemented proof editor with LaTeX input via svelte-mathquill, live Markdown preview, and results UI with dynamic styling. Backend exposed REST endpoints with pydantic models and integrated OpenAI via async client for structured grading outputs. Authored USAJMO-specific grading rubric prompt with schema-driven parsing to ensure reliable JSON responses with score, feedback breakdown, and explanation.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Chess Engine with Artificial Intelligence</div>
+            <div class="project-tech">Python, TKinter - Artificial Intelligence</div>
+            <div class="project-description">
+                This was my very first venture into Artificial Intelligence. I used Python to fully simulate chess and to create an intermediate level AI with minimax with alpha-beta pruning. I also made a GUI that allows a user to play against the engine or another player.
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-title">FullStack FaceBook Clone | <a href="#" class="url-link">GitHub</a></div>
+            <div class="project-tech">React, Chakra UI, Rest API, Node.js, Express.js, MongoDB - Web Development</div>
+            <div class="project-description">
+                Built a fully functional social media platform inspired by Facebook, allowing users to sign up, post status updates, comment, like posts, and manage profiles. Focused on creating an intuitive user experience and responsive design. Implemented features such as real-time updates, friend requests, and a news feed to simulate real-world social networking behavior.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Work Experience</div>
+        <div class="experience-item">
+            <div class="experience-header">Chief Technology Officer — Frontlines Foundation</div>
+            <div class="experience-details">July 2025 - Present • Nonprofit Digital Safety<br>
+            Leading technical architecture and development of the foundation's digital safety education platform. Built scalable, component-driven marketing site with Next.js 15, React 18, and TypeScript. Implemented SEO optimization with Metadata API, static pre-rendering for performance, and accessible UI components with Framer Motion animations. Architected centralized theming system and integrated type-safe form handling across all organizational web presence.</div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-header">Full Stack Engineer — Stellar</div>
+            <div class="experience-details">July 2025 - Present • Educational Technology<br>
+            Developing AI-powered educational tools including USAJMO proof grader with SvelteKit frontend and Python/Quart backend. Built LaTeX proof editor with live Markdown preview, integrated OpenAI GPT-4o for structured grading with detailed feedback breakdowns. Authored USAJMO-specific grading rubrics and implemented schema-driven parsing for reliable AI responses. Connected to MongoDB problemset store for curated practice problems.</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="experience-item">
+            <div class="experience-header">BASIS Independent Silicon Valley, San Jose</div>
+            <div class="experience-details">Present • 4.00 Unweighted, 4.88 Weighted</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Competitions</div>
+        <div class="award-item">
+            <span class="award-title">USAJMO Qualifier</span> · MAA • I was in the top 250 of all high schoolers in the country in mathematics.
+        </div>
+        <div class="award-item">
+            <span class="award-title">USACO Coding Competition Gold</span> · USACO • Advanced to the Second Highest Division of the USACO competition.
+        </div>
+        <div class="award-item">
+            <span class="award-title">FTC Robotics</span> - Placed 1st in several NorCal Tournaments and qualified to the World Championship and won 7th place. Won several awards such as Inspire Award.
+        </div>
+        <div class="award-item">
+            <span class="award-title">Science Olympiad</span> - Placed 3rd in Anatomy and Physiology and 4th in Disease Detectives at NorCal State Championship
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Tests</div>
+        <div class="award-item">
+            <span class="award-title">AMC 10</span> MAA · 150/150 <span class="award-title">AIME</span> MAA · 10/15
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Volunteering</div>
+        <div class="experience-item">
+            <div class="experience-header">Terra Ed</div>
+            <div class="experience-details">Apr 2023 - Jun 2024 • Robotics Teacher · Education<br>
+            Volunteered and taught elementary and middle schoolers the fundamentals of robot hardware and software</div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-header">Choi's Institute of Tae Kwon Do</div>
+            <div class="experience-details">Feb 2024 - • Instructor · Education<br>
+            Instructed students in the way of the martial art.</div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-header">Schoolhouse</div>
+            <div class="experience-details">Dec 2024 - • Tutor · Education<br>
+            Volunteer and teach students math, physics, and computer science online.</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Clubs</div>
+        <div class="experience-item">
+            <div class="experience-header">President of Machine Learning Club</div>
+            <div class="experience-details">Led weekly meetings discussing and teaching Machine Learning Concepts to over fifty students at my school. Led and organized the creation of a Machine Learning research conference centered at my school.</div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-header">Treasurer of Computer Algorithm Club</div>
+            <div class="experience-details">Created core curriculum to teach over 60 students at my school about Data Structures and Algorithms and managed finances of the club.</div>
+        </div>
+    </div>
+</body>
+</html>
